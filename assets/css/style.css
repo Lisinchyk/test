@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Proba Pro';
+    color: #161A1E;
+}
+
+.container {
+    display: flex;
+    max-width: 1280px;
+    max-height: 1024px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    min-height: 1024px;
+    align-items: center;
+}
+
+.header {
+    padding-top: 100px;
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.main__content {
+    margin: auto;
+}
+
+.main__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 350;
+    color: #161A1E;    
+}
+
+.main__description {
+    max-width: 442px;
+    margin-top: 0;
+    margin-bottom: 100px;
+    font-size: 18px;
+    font-weight: 350;
+}
+
+.btn__link {
+    padding: 16px 85px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #FDD50B;
+    border-radius: 25px;
+}
+
+.footer {
+    width: 100%;
+    flex-shrink: 0;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.phone__number {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: 500;    
+}
+
+.contacts__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.btn-action {
+    border: 1px solid #161A1E;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 350;
+    padding: 11px 64px;
+    cursor: pointer;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.footer__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+
+.container__slider {
+    width: 60%;
+    /* height: 100%; */
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.slider1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 350;
+    text-align: center;
+}
+
+.slider__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 360px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.slider__img {
+    display: block;
+    width: 100%;
+}
+
+.slider__nav {
+    position: relative;
+    margin-top: 50px;
+}
+
+.radio__btn {
+    position: relative;
+}
+
+.radio__btn::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #F4F4F4;
+    cursor: pointer;
+}
+
+.radio__btn:not(:last-child)::before {
+    margin-right: 10px;
+}
+
+.radio__btn::after {
+    content: '';
+    display: block;
+    display: none;
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #FDD50B;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+input[type='radio']:checked + .radio__btn::after {
+    display: block;
+}
+
+.background-1 {
+    position: absolute;
+    top: 10px;
+    left: 177px;
+    right: -813px;
+    bottom: -222px;
+    background-color: #FDD50B;
+    border-radius: 150px 0 0 0;
+    transform: rotate(-44.09deg);
+    z-index: 1;
+}
+
+.background-2 {
+    position: absolute;
+    top: -200px;
+    left: 355px;
+    right: -813px;
+    bottom: -222px;
+    background-color: #FDD50B;
+    border-radius: 150px 0 0 0;
+    transform: rotate(-44.09deg);
+    opacity: 0.3;
+    z-index: 0;
+}
